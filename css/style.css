@@ -1,0 +1,434 @@
+/* <!-- Prasanna Manian | 8991650 | pmanian1650@Conestogac.on.ca --> */
+.container{
+    width: 1100px;
+    background-color: black;
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: auto;
+    padding: 0;
+    color: black;
+    background-size: cover;
+    
+}
+
+header {
+    background: url('/images/treenit.jpg') no-repeat center center; 
+    background-size: cover;
+    color:#ece6e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+header img {
+    border-radius: 100px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-family: 'Cinzel';
+    text-shadow: 1px 2px 2px rgb(255, 0, 0), 0 0 25px rgb(255, 106, 43), 0 0 5px #580303;
+}
+.nav{
+    padding: 10px;
+    background-color:#2d2a30 ;
+    text-overflow:clip;
+    font-size: 18px;
+    
+}
+/* Navigation */
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    width: 100%;
+}
+
+.nav ul li {
+    position: relative;
+}
+
+.nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1b1919;
+    padding: 10px;
+    list-style: none;
+   
+   
+}
+
+.nav ul ul li {
+    margin: 5px;
+    
+}
+
+.nav ul li:hover ul {
+    display: block;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #000000;
+    width: 100%;
+    color: white;
+}
+
+/* Main Section */
+
+
+.homeMain {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.homeMain > div {
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+/* Hero Section */
+.homeMain > div:first-child img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.homeMain > div:nth-child(2){
+    padding: 20px;
+}
+
+.homeMain > div:nth-child(2) h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.homeMain > div:nth-child(2) p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.8;
+}
+
+/* Content Sections */
+.homeMain > div:nth-child(3), main > div:nth-child(4) {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.homeMain > div:nth-child(3) div, main > div:nth-child(4) div {
+    flex: 1;
+    padding: 20px;
+}
+
+.homeMain > div:nth-child(3) figure, main > div:nth-child(4) figure {
+    flex: 1;
+    margin: 0;
+    padding: 20px;
+}
+
+.homeMain figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.clip1 img {
+    clip-path: polygon(20.95% 0.75%, 86.67% 4.63%, 98.55% 48.52%, 92.50% 96.67%, 9.16% 99.79%, 0.46% 46.47%);
+    height: 600px;
+    width: 100%;
+  
+}
+
+.clip2 img {
+    clip-path: polygon(8.89% 0.37%, 100% 0%, 87.04% 43.58%, 94.72% 100.01%, -0.28% 97.76%, 10.69% 44.96%);
+    height: 600px;
+    width: 100%;
+}
+
+/* Aside */
+aside {
+    background-color:#655b6f;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+aside h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color:black;
+    text-align: center;
+}
+
+aside > div {
+    display: flex;
+    gap: 20px;
+}
+
+aside > div > div {
+    flex: 1;
+    background: #2d2a30;
+   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+aside h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+aside ul {
+  
+    padding-left: 50px;
+    margin: 0 0 15px;
+    text-align: left;
+}
+.ul1{
+    list-style-type:square;
+
+}
+.ul2{
+    list-style-type:decimal;
+}
+aside ul li {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+aside button {
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+aside button:hover {
+    background-color: #3D314A;
+}
+
+.footer {
+    background: url('/images/treenit.jpg') no-repeat center center; 
+    background-size: cover;
+    color: white; 
+    padding: 30px;
+
+}
+
+.footer .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+    margin-left: 130px;
+    
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 30%; 
+}
+
+.footer ul li {
+    margin-bottom: 10px; 
+    text-align: left;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+    transition: color 0.3s ease-in-out; 
+}
+
+.footer ul li a:hover {
+    color: #655b6f; 
+}
+
+
+.footer p {
+    font-size: 0.8rem;
+    color: rgb(172, 156, 156); 
+}
+
+.berm{
+    background-color: #423c47;
+     color: white;
+     padding: 20px;
+     font-size: 20px;
+}
+form {
+    background-color: #423c47;
+    border: 1px solid black;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+form fieldset {
+    padding: 20px;
+    border: 3px solid black;
+}
+
+.field input, .field select, form textarea {
+    display: inline-block;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.checkitems{
+    text-align: left;
+}
+form button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #655b6f;
+}
+#videoCont{
+    margin-top: 30px;
+    display: flex;
+
+}
+.video{
+    background-color:#423c47;
+    width: 50%;
+    height: 500px;
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+
+}
+#table h2{
+    color: white;
+    text-align: center;
+}
+table th, table td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+table th {
+    background-color: #423c47;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+table tr:nth-child(odd) {
+    background-color: #655b6f;
+    color: white;
+}
+
+.innerImage{
+    background-image: url('/images/ship-5597581_1280.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+.innerImage h2{
+    color: white;
+    padding: 50px;
+    font-size: 30px;
+    text-shadow: 1px 2px 2px white, 0 0 25px #b31b1b, 0 0 5px #d54242;
+}
+.buttonCont{
+    text-align: right;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+.copy{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center; 
+    padding-top: 20px;
+    border-top: 3px solid black;
+}
+.cont1{
+    background-color: #423c47; 
+    color: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+.cont2{
+    background-color: white; 
+    margin:20px;
+     border-radius: 10px;
+}
+.cardImg{
+    background-color: black; 
+    width: 200px;
+    height: 100px;
+}
+.card1{
+    box-shadow: 10px 10px rgb(3, 3, 3);
+    margin-left: 10px;
+}
+#select{
+    display: inline-block;
+    width: 97.5%;
+}
+#thoughts{
+    height: 50px;
+}
+.checkitems label{
+        display: inline-block;
+        vertical-align: top;
+    }
+#qc{
+    margin: 5px;
+}
